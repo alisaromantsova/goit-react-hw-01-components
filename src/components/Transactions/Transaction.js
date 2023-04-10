@@ -12,3 +12,6 @@ Transaction.propTypes = {
     amount: PropTypes.string,
     currency:PropTypes.string
    };
+
+
+   
