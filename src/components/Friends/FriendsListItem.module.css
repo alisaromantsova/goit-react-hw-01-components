@@ -1,0 +1,27 @@
+.online{
+    background: #20f432;
+  
+}
+
+.offline{
+background: red;
+
+
+}
+.isOnline{
+   display: block;
+   width: 10px;
+height: 10px;
+border-radius: 50px;
+}
+.item{
+    background-color: #fff;
+    border: 1px solid #cbcbcb;
+    border-radius: 8px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 20px;
+    box-shadow: 1px 1px 10px #343434;
+    padding: 20px;
+}
