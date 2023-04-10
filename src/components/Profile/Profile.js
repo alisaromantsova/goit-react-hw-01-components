@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import css from './Profile.module.css'
+import css from './Profile.module.css';
 
 export function Profile({ avatar, username, tag, location, stats }) {
   return (
@@ -30,9 +30,13 @@ export function Profile({ avatar, username, tag, location, stats }) {
 }
 
 Profile.propTypes = {
-  avatar: PropTypes.string,
-  username: PropTypes.string,
-  tag: PropTypes.string,
-  location: PropTypes.string,
-  stat: PropTypes.object,
+  avatar: PropTypes.string.isRequired,
+  username: PropTypes.string.isRequired,
+  tag: PropTypes.string.isRequired,
+  location: PropTypes.string.isRequired,
+  stats: PropTypes.exact({
+    followers: PropTypes.number.isRequired,
+    views: PropTypes.number.isRequired,
+    likes: PropTypes.number.isRequired,
+  }).isRequired,
 };
